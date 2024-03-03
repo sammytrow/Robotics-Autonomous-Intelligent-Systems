@@ -1,0 +1,24 @@
+class cozmo.behavior.BehaviorTypes
+
+LookAroundInPlace = _BehaviorType(name='LookAroundInPlace', id=6)
+
+    Turn and move head, but don’t drive, to see what is around Cozmo.
+
+
+
+class cozmo.robot.PickupObject(obj, use_pre_dock_pose=True, **kw)
+
+    Represents the pickup object action in progress.
+
+    Returned by pickup_object()
+
+    obj = None
+
+        The object (e.g. an instance of cozmo.objects.LightCube) that was picked up
+
+    use_pre_dock_pose = None
+
+        A bool that is true when Cozmo needs to go to a pose before attempting to navigate to the object
+
+
+
